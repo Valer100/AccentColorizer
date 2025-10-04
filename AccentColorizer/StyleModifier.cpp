@@ -704,10 +704,6 @@ void ModifyStyles()
 		ModifyStyle(BP_CHECKBOX, 0, j);
 		ModifyStyle(BP_RADIOBUTTON, 0, j);
 	}
-	for (j = 1; j <= 3; j++)
-	{
-		ModifyStyle(BP_GROUPBOX, 0, j);
-	}
 
 
 	SetCurrentTheme(L"DarkMode_Explorer::Button");
@@ -717,9 +713,14 @@ void ModifyStyles()
 		ModifyStyle(BP_CHECKBOX, 0, j);
 		ModifyStyle(BP_RADIOBUTTON, 0, j);
 	}
-	for (j = 1; j <= 3; j++)
+
+
+	SetCurrentTheme(L"DarkMode_InfoPaneButton::Button");
+	//
+	for (j = 1; j <= 7; j++)
 	{
-		ModifyStyle(BP_GROUPBOX, 0, j);
+		ModifyStyle(BP_CHECKBOX, 0, j);
+		ModifyStyle(BP_RADIOBUTTON, 0, j);
 	}
 
 
