@@ -683,6 +683,38 @@ void ModifyStyles()
 		ModifyStyle(23, 4, 0);
 	}
 
+
+	///
+	/// Some Windows 11 dark mode controls
+	/// (checkboxes, radiobuttons)
+	///
+
+	SetCurrentTheme(L"DarkMode_DarkTheme::Button");
+	//
+	for (j = 1; j <= 7; j++)
+	{
+		ModifyStyle(BP_CHECKBOX, 0, j);
+		ModifyStyle(BP_RADIOBUTTON, 0, j);
+	}
+	for (j = 1; j <= 3; j++)
+	{
+		ModifyStyle(BP_GROUPBOX, 0, j);
+	}
+
+
+	SetCurrentTheme(L"DarkMode_Explorer::Button");
+	//
+	for (j = 1; j <= 7; j++)
+	{
+		ModifyStyle(BP_CHECKBOX, 0, j);
+		ModifyStyle(BP_RADIOBUTTON, 0, j);
+	}
+	for (j = 1; j <= 3; j++)
+	{
+		ModifyStyle(BP_GROUPBOX, 0, j);
+	}
+
+
 	//
 	CloseThemeData(hTheme);
 	hTheme = nullptr;
