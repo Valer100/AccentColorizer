@@ -534,29 +534,61 @@ void ModifyStyles()
 		}
 	}
 
-	if (g_bColorizeProgressBar)
+
+	/* Progressbars tweaks */
+
+	SetCurrentTheme(L"Progress");
+	//
+	ModifyStyle(5, 4, TMT_DIBDATA);
+	ModifyStyle(6, 4, TMT_DIBDATA);
+
+	for (i = 3; i <= 10; i++)
 	{
-		SetCurrentTheme(L"Progress");
-		//
-		ModifyStyle(5, 4, TMT_DIBDATA);
-		for (i = 3; i <= 10; i++)
-		{
-			ModifyStyle(i, 1, TMT_DIBDATA);
-		}
-
-
-		SetCurrentTheme(L"Indeterminate::Progress");
-		//
-		for (i = 3; i <= 10; i++)
-		{
-			ModifyStyle(i, 1, TMT_DIBDATA);
-		}
-
-
-		SetCurrentTheme(L"AB::AddressBand");
-		//
-		ModifyStyle(1, 1, TMT_DIBDATA);
+		ModifyStyle(i, 1, TMT_DIBDATA);
 	}
+
+
+	SetCurrentTheme(L"Indeterminate::Progress");
+	//
+	ModifyStyle(8, 1, TMT_DIBDATA);
+
+
+	SetCurrentTheme(L"AB::AddressBand");
+	//
+	ModifyStyle(1, 1, TMT_DIBDATA);
+
+
+	SetCurrentTheme(L"DarkMode_DarkTheme::Progress");
+	//
+	ModifyStyle(5, 4, TMT_DIBDATA);
+	ModifyStyle(6, 4, TMT_DIBDATA);
+
+	for (i = 3; i <= 10; i++)
+	{
+		ModifyStyle(i, 1, TMT_DIBDATA);
+	}
+
+
+	SetCurrentTheme(L"DarkMode_CopyEngine::Progress");
+	//
+	ModifyStyle(5, 4, TMT_DIBDATA);
+	ModifyStyle(6, 4, TMT_DIBDATA);
+
+	for (i = 3; i <= 10; i++)
+	{
+		ModifyStyle(i, 1, TMT_DIBDATA);
+	}
+
+
+	SetCurrentTheme(L"DarkMode_DarkTheme_Indeterminate::Progress");
+	//
+	ModifyStyle(8, 1, TMT_DIBDATA);
+
+
+	SetCurrentTheme(L"DarkMode_CopyEngine_Indeterminate::Progress");
+	//
+	ModifyStyle(8, 1, TMT_DIBDATA);
+
 
 	/** Tweaks for legacy components **/
 
