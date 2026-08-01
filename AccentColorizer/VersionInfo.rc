@@ -17,7 +17,7 @@
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUD)
 LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
-#pragma code_page(1251)
+#pragma code_page(1250)
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -41,7 +41,7 @@ BEGIN
     BEGIN
         BLOCK "040004b0"
         BEGIN
-            VALUE "CompanyName", "krlvm"
+            VALUE "CompanyName", "krlvm, Valer100"
             VALUE "FileDescription", "AccentColorizer"
             VALUE "FileVersion", "1.2.0.0"
             VALUE "InternalName", "AccentColorizer.exe"

@@ -783,7 +783,6 @@ void ModifyStyles()
 		}
 	}
 
-
 	//
 	CloseThemeData(hTheme);
 	hTheme = nullptr;
