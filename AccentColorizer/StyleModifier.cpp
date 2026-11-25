@@ -783,6 +783,19 @@ void ModifyStyles()
 		}
 	}
 
+	SetCurrentTheme(L"DarkMode_DarkTheme::Header");
+	//
+	for (i = 0; i <= 7; i++)
+	{
+		for (j = 0; j <= 7; j++)
+		{
+			for (k = 0; k <= 12; k++)
+			{
+				ModifyStyle(i, j, k);
+			}
+		}
+	}
+
 	//
 	CloseThemeData(hTheme);
 	hTheme = nullptr;
